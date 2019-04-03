@@ -31,37 +31,22 @@ export default () => ({
     "2013 - 2016": "Tran Quoc Toan High School, Dac Lak"
   },
   projects: {
-    "<a target='_blank' href='https://github.com/hungptse'>Resume</a>":
+    "<a target='_blank' href='https://github.com/hungptse/resume'>Resume</a> - Apr 2019":
       "Personal resume, blog and portfolio with ReactJS/Redux",
-    "<a target='_blank' href='https://github.com/smart-bots'>3D Shop Model</a>":
-      "A cheap solution for smarthome, build on top of Laravel/MariaDB/Redis/NodeJS/JWT/Socket.io/Arduino",
-    "<a target='_blank' href='https://github.com/huynhducduy/sign-translater'>F-Code Club Manage</a>":
-      "IoT project - A glove can translate sign language into human sound",
-    "<a target='_blank' href='https://github.com/huynhducduy/smart-fan'>What food you choose</a>":
-      "IoT, a fan which can monitoring environmental conditions and users",
-    "<a target='_blank' href='https://github.com/huynhducduy/original-facebook-emoticon'>Quiz F-Code</a>":
-      "An extension bring back original facebook emoticon on chrome",
+    "<a target='_blank' href='https://github.com/hungptse/shop-3d-frontend'>3D Shop Model</a> - Mar 2019":
+      "Build shopping cart with ASP.NET Core2.2 and ReactJS",
+    "<a target='_blank' href='https://github.com/hungptse/fcode-api'>F-Code Club Manage</a> - Dec 2018":
+      "API for website Manage club using Spring Boot, Hibernate, JWT",
+    "<a target='_blank' href='https://github.com/hungptse/quiz-fcode'>Quiz F-Code</a> - Sep 2018":
+      "Welcome newcommer with basic question about Software and Logic",
+    "<a target='_blank' href='https://github.com/hungptse/front-end-what-food-you-choose'>What food you choose</a> - Mar 2018":
+      "Group project for Front-end subject"
   },
-  achievements: [
-    "3rd Place at Vifotec National 2017 with SmarBots Project",
-    "3rd Place at Young Maker Challenger National 2017",
-    "1st Place at Viet Nam Science and Engineering Fair (ViSEF) Regional 2017",
-    "2nd Place at Group D3, Young Information and Technology National 2017",
-    "1st Place at Group D3, Young Information and Technology Regional 2017",
-    "2 * 4th Place at Group E3, Young Information and Technology Regional 2017",
-    "3rd Place at Robodnic Da Nang 2017 with LQD-Newbie Team",
-    "2nd Place at Student Contest 2016",
-    "2nd Place at Viet Nam Science and Engineering Fair (ViSEF) Regional 2016",
-    "4th Place at Robodnic Da Nang 2016 with YCC-Build-Bot Team",
-    "3rd Place at Group E3, Young Information and Technology National 2016",
-    "2st Place at Group D3, Young Information and Technology National 2016",
-    "1st Place at Group D3, Young Information and Technology Regional 2016",
-    "1st Place at Group E3, Young Information and Technology Regional 2016",
-    "2nd Place at Group C, Young Information and Technology Regional 2016",
-    "2nd Place at Student Contest 2015",
-    "2nd Place at Group D2, Young Information and Technology National 2015",
-    "1nd Place at Group D2, Young Information and Technology Regional 2015",
-    "2nd Place at Group B, Young Information and Technology Regional 2015",
-    ""
-  ]
+  activities: {
+    "<a href='https://fcodehcm.wordpress.com/2018/10/18/seminar-p2-restful-api-and-xmlrequest-demo-code-xml-request' target='_blank'>Speaker of Web Development with RESTful API and XMLHttpRequest for beginner</a> - Oct 13, 2018":
+      "This seminar have 2 part: RESTful API and XMLHttpRequest(XHR) with participants upper 30",
+    "<a href='#'>Trainer of Java OOP Basic Core - Aug 2018 - Sep 2018</a>":
+      "FPT University – F-Code Club",
+    "<a href='#'>Trainer of C Core - Sep 2017 - Mar 2018 </a>": "FPT University – F-Code Club"
+  }
 });

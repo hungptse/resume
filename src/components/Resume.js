@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Tag, Timeline } from "antd";
 import { connect } from "react-redux";
-import { Button, Icon } from "semantic-ui-react";
+import { Button, Icon, Label } from "semantic-ui-react";
 class Resume extends Component {
   componentDidMount() {
     console.log(this.props);
@@ -14,7 +14,7 @@ class Resume extends Component {
       skill_others,
       objective,
       education,
-      achievements,
+      activities,
       projects
     } = this.props.data;
     const listInformation = Object.keys(information).map(key => (
@@ -35,7 +35,13 @@ class Resume extends Component {
       <div dangerouslySetInnerHTML={{ __html: value }} />
     ));
     const listSkillOthers = skill_others.map(value => (
-      <Button content={value} size="small" secondary basic />
+      <Button
+        style={{ marginTop: 5 }}
+        content={value}
+        size="small"
+        secondary
+        basic
+      />
     ));
 
     const listEducation = Object.keys(education).map(key => (
@@ -46,15 +52,15 @@ class Resume extends Component {
     ));
 
     const listProjects = Object.keys(projects).map(key => (
-      <Timeline.Item color="gray" className="education" key={projects[key]}>
+      <Timeline.Item color="gray" key={projects[key]}>
         <span dangerouslySetInnerHTML={{ __html: key }} />
         <p>{projects[key]}</p>
       </Timeline.Item>
     ));
-
-    const listAchievements = achievements.map(value => (
-      <Timeline.Item color="gray" key={value}>
-        {value}
+    const listActivities = Object.keys(activities).map(key => (
+      <Timeline.Item color="gray" key={activities[key]}>
+        <span dangerouslySetInnerHTML={{ __html: key }} />
+        <p>{activities[key]}</p>
       </Timeline.Item>
     ));
 
@@ -63,39 +69,73 @@ class Resume extends Component {
         <div className="print-button">
           <Button icon="download" size="large" onClick={() => window.print()} />
         </div>
-        <h3>
-          <Icon name="caret right" /> Information
-        </h3>
-        {listInformation}
-        <h3>
-          <Icon name="caret right" /> Objective
-        </h3>
-        {objectiveList}
-        <h3>
-          <Icon name="caret right" /> Education
-        </h3>
-        <Timeline>{listEducation}</Timeline>
-        <h3>
-          <Icon name="caret right" /> Skills
-        </h3>
-        <div style={{marginBottom : 10}}>
-        <Button content={<Icon name="clone outline" />} size="small" secondary basic label="Front-end:"/>
-        {listSkillFrontEnd}
+        <div style={{ marginBottom: 10 }}>
+          <h3>
+            <Icon name="quote left" /> Information
+          </h3>
+          {listInformation}
+        </div>
+        <div style={{ marginBottom: 10 }}>
+          <h3>
+            <Icon name="location arrow" /> Objective
+          </h3>
+          {objectiveList}
+        </div>
+        <div style={{ marginBottom: 5 }}>
+          <h3>
+            <Icon name="graduation" /> Education
+          </h3>
+          <Timeline>{listEducation}</Timeline>
+        </div>
+        <div style={{ marginBottom: 10 }}>
+          <h3>
+            <Icon name="code" /> Skills
+          </h3>
+          <div style={{ marginBottom: 10 }}>
+            <Button as="div" labelPosition="right">
+              <Button basic color="blue">
+                <Icon name="clone outline" />
+                Front-end
+              </Button>
+            </Button>
+            {listSkillFrontEnd}
+          </div>
+        </div>
+        <div style={{ marginBottom: 10 }}>
+          <Button as="div" labelPosition="right">
+            <Button basic color="blue">
+              <Icon name="database" />
+              Back-end
+            </Button>
+          </Button>
+          {listSkillBackEnd}
+        </div>
+        <div style={{ marginBottom: 10 }}>
+          <h3>
+            <Icon name="setting" /> Others
+          </h3>
+          <div>
+            <Button as="div" labelPosition="right">
+              <Button basic color="blue">
+                <Icon name="database" />
+                Tool
+              </Button>
+            </Button>
+            {listSkillOthers}
+          </div>
+        </div>
+        <div style={{ marginBottom: 10 }}>
+          <h3>
+            <Icon name="fork" /> Projects
+          </h3>
+          <Timeline>{listProjects}</Timeline>
         </div>
         <div>
-        <Button content={<Icon name="database" />} size="small" secondary basic label="Back-end:"/>
-        {listSkillBackEnd}
+          <h3>
+            <Icon name="paw" /> Activities
+          </h3>
+          <Timeline>{listActivities}</Timeline>
         </div>
-        <h3>
-          <Icon name="caret right" /> Others
-        </h3>
-        {listSkillOthers}
-        <h3>
-          <Icon name="caret right" /> Projects
-        </h3>
-        <Timeline>{listProjects}</Timeline>
-        {/* <h2># Achievements</h2>
-        <Timeline className="timeline-list">{listAchievements}</Timeline> */}
       </div>
     );
   }
