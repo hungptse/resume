@@ -27,7 +27,7 @@ export default () => ({
   ],
   education: {
     "2016 - 2020": "Software Engineering at FPT University, HCMC",
-    "2013 - 2016": "Tran Quoc Toan High School, Dac Lak"
+    "2013 - 2016": "Class of Science at Tran Quoc Toan High School, Dac Lak"
   },
   projects: {
     "<a target='_blank' href='https://github.com/hungptse/resume'>Resume</a> - Apr 2019":
