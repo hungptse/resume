@@ -124,7 +124,7 @@ class Resume extends Component {
             {listSkillOthers}
           </div>
         </div>
-        <div style={{ marginBottom: 10 }}>
+        <div style={{ marginTop: 10 }}>
           <h3>
             <Icon name="fork" /> Projects
           </h3>

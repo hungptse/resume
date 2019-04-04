@@ -24,7 +24,6 @@ export default () => ({
     "Insomnia/Postman",
     "Firebase",
     "Terminal/Zsh",
-    "SSH"
   ],
   education: {
     "2016 - 2020": "Software Engineering at FPT University, HCMC",
