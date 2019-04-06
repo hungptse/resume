@@ -1,3 +1,6 @@
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f9aa23a0-fa25-4d36-b9c9-3c6a44b2ece1/deploy-status)](https://app.netlify.com/sites/elastic-wing-b362b4/deploys)
+-----------------------------------------------------
 This project was bootstrapped with Webpack4 + ReactJS
 
 ## Available Scripts
