@@ -29,6 +29,9 @@ export default () => ({
     "2016 - 2020": "Software Engineering at FPT University, HCMC",
     "2013 - 2016": "Class of Science at Tran Quoc Toan High School, Dac Lak"
   },
+  workingEXP : {
+    "Apr 2019 - Now" : "Intern Back-end at Splash Interactive VN"
+  },
   projects: {
     "<a target='_blank' href='https://github.com/hungptse/resume'>Resume</a> - Apr 2019":
       "Personal resume, blog and portfolio with ReactJS/Redux",
