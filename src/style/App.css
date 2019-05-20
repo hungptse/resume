@@ -1,6 +1,6 @@
 @import "~antd/dist/antd.css";
 body {
-  font-weight: 300;
+  font-weight: 350;
 }
 
 .intro {
@@ -41,7 +41,7 @@ body {
   padding: 50px;
 }
 .resume p {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .nav .anticon {

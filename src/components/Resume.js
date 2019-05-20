@@ -20,7 +20,7 @@ class Resume extends Component {
     } = this.props.data;
     const listInformation = Object.keys(information).map(key => (
       <p key={key}>
-        {key} : <b>{information[key]}</b>
+        {key} : {information[key]}  
       </p>
     ));
 

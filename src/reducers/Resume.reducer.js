@@ -8,8 +8,8 @@ export default () => ({
     Address: "FPT University, Quang Trung Software City, 12 District, HCMC"
   },
   objective: [
-    "<p>Short-term: to become <strong>Full-Stack Developer</strong> </p>",
-    "<p>Long-term: to become  <strong>Technical Analysis</strong> </p>"
+    "<p>Short-term: to become <i>Full-Stack Developer</i> </p>",
+    "<p>Long-term: to become  <i>Technical Analysis</i> </p>"
   ],
   skill_front_end: ["HTML5/CSS/JS", "ReactJS", "Redux"],
   skill_back_end: [
@@ -30,7 +30,8 @@ export default () => ({
     "2013 - 2016": "Class of Science at Tran Quoc Toan High School, Dac Lak"
   },
   workingEXP : {
-    "Apr 2019 - Now" : "Intern Back-end at Splash Interactive VN"
+    "Apr 2019 - May 2019" : "Intern Back-end at Splash Interactive VN",
+    "May 2019 - Now" : "Intern Back-end at FPT Software"
   },
   projects: {
     "<a target='_blank' href='https://github.com/hungptse/resume'>Resume</a> - Apr 2019":
