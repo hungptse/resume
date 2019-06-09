@@ -30,7 +30,7 @@ export default () => ({
     "2013 - 2016": "Class of Science at Tran Quoc Toan High School, Dac Lak"
   },
   workingEXP : {
-    "Apr 2019 - May 2019" : "Intern Back-end at Splash Interactive VN",
+    // "Apr 2019 - May 2019" : "Intern Back-end at Splash Interactive VN",
     "May 2019 - Now" : "Intern Back-end at FPT Software"
   },
   projects: {
