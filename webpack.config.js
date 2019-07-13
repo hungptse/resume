@@ -1,6 +1,9 @@
-var path = require("path");
-var hwp = require("html-webpack-plugin");
+const path = require("path");
+const hwp = require("html-webpack-plugin");
+const stylish = require('webpack-stylish');
 module.exports = {
+  context: path.resolve(__dirname),
+  devtool: 'source-map',
   entry: path.join(__dirname, "/src/index.js"),
   output: {
     filename: "build.js",
@@ -40,6 +43,7 @@ module.exports = {
     new hwp({
       template: path.join(__dirname, "/src/index.html"),
       favicon: "public/icon.png"
-    })
+    }),
+    new stylish(),
   ]
 };

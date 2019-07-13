@@ -19,11 +19,11 @@ class Resume extends Component {
       workingEXP
     } = this.props.data;
     const listInformation = Object.keys(information).map(key => (
-      <p key={key}>
-        {key} : {information[key]}  
-      </p>
+      <Timeline.Item color="gray" className="education" key={information[key]}>
+        {key}
+        <p dangerouslySetInnerHTML={{ __html: information[key] }}></p>
+      </Timeline.Item>
     ));
-
     const listSkillFrontEnd = skill_front_end.map(value => (
       <Button content={value} size="small" secondary basic />
     ));
@@ -32,8 +32,11 @@ class Resume extends Component {
       <Button content={value} size="small" secondary basic />
     ));
 
-    const objectiveList = objective.map(value => (
-      <div dangerouslySetInnerHTML={{ __html: value }} />
+    const objectiveList = Object.keys(objective).map(key => (
+      <Timeline.Item color="gray" className="education" key={objective[key]}>
+        {key}
+        <p dangerouslySetInnerHTML={{ __html: objective[key] }}></p>
+      </Timeline.Item>
     ));
     const listSkillOthers = skill_others.map(value => (
       <Button
@@ -48,14 +51,14 @@ class Resume extends Component {
     const listEducation = Object.keys(education).map(key => (
       <Timeline.Item color="gray" className="education" key={education[key]}>
         {key}
-        <p>{education[key]}</p>
+        <p dangerouslySetInnerHTML={{ __html: education[key] }}></p>
       </Timeline.Item>
     ));
 
     const listWorking = Object.keys(workingEXP).map(key => (
       <Timeline.Item color="gray" className="education" key={workingEXP[key]}>
         {key}
-        <p>{workingEXP[key]}</p>
+        <p dangerouslySetInnerHTML={{ __html: workingEXP[key] }}></p>
       </Timeline.Item>
     ));
 

@@ -1,16 +1,16 @@
 export default () => ({
   information: {
-    "Full name": "Phan Thanh Hung",
-    "Day of birth": "September 9, 1998",
-    "Phone number": "0943791739",
-    Email: "hungpt.se@gmail.com",
-    Skype: "live:hung.bi1998",
-    Address: "FPT University, Quang Trung Software City, 12 District, HCMC"
+    "Full name": "<code>Phan Thanh Hung</code>",
+    "Day of birth": "<code>September 9, 1998</code>",
+    "Phone number": "<code>0943791739</code>",
+    "Email": "<code>hungpt.se@gmail.com</code>",
+    "Skype": "<code>live:hung.bi1998</code>",
+    "Address": "<code>FPT University, Quang Trung Software City, 12 District, HCMC</code>"
   },
-  objective: [
-    "<p>Short-term: to become <i>Full-Stack Developer</i> </p>",
-    "<p>Long-term: to become  <i>Technical Analysis</i> </p>"
-  ],
+  objective: {
+    "Short-term": "<code>Full-Stack Developer</code>",
+    "Long-term": "<code>Technical Analysis</code>"
+  },
   skill_front_end: ["HTML5/CSS/JS", "ReactJS", "Redux"],
   skill_back_end: [
     "JavaEE/Spring Boot",
@@ -23,15 +23,15 @@ export default () => ({
     "MSSQL",
     "Insomnia/Postman",
     "Firebase",
-    "Terminal/Zsh",
+    "Terminal/Zsh"
   ],
   education: {
-    "2016 - 2020": "Software Engineering at FPT University, HCMC",
-    "2013 - 2016": "Class of Science at Tran Quoc Toan High School, Dac Lak"
+    "2016 - 2020": "<code>Software Engineering at FPT University, HCMC</code>",
+    "2013 - 2016": "<code>Class of Science at Tran Quoc Toan High School, Dac Lak</code>"
   },
-  workingEXP : {
-    "Apr 2019 - May 2019" : "Intern Back-end at Splash Interactive VN",
-    "May 2019 - Now" : "Intern Back-end at FPT Software"
+  workingEXP: {
+    "Apr 2019 - May 2019": "<code>Intern Back-end at Splash Interactive VN</code>",
+    "May 2019 - Now": "<code>Intern Back-end at FPT Software HCM</code>"
   },
   projects: {
     "<a target='_blank' href='https://github.com/hungptse/resume'>Resume</a> - Apr 2019":
