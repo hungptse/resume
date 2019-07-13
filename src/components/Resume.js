@@ -25,11 +25,11 @@ class Resume extends Component {
       </Timeline.Item>
     ));
     const listSkillFrontEnd = skill_front_end.map(value => (
-      <Button content={value} size="small" secondary basic />
+      <Button content={value} style={{ marginTop: 5 }} size="small" secondary basic />
     ));
 
     const listSkillBackEnd = skill_back_end.map(value => (
-      <Button content={value} size="small" secondary basic />
+      <Button content={value}  style={{ marginTop: 5 }} size="small" secondary basic />
     ));
 
     const objectiveList = Object.keys(objective).map(key => (
